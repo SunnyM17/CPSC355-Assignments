@@ -1,0 +1,1097 @@
+Script started on 2019-10-06 16:53:23-06:00
+]0;guransh.mangat1@csa2:~/CPSC355/A2guransh.mangat1@csa2:~/CPSC355/A2$ gdb 2a
+GNU gdb (GDB) Fedora 8.1.1-4.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from 2a...(no debugging symbols found)...done.
+(gdb) [K(gdb) b loop
+Breakpoint 1 at 0x400660
+(gdb) b test1
+Breakpoint 2 at 0x400668
+(gdb) b test2
+Breakpoint 3 at 0x400674
+(gdb) b test3
+Breakpoint 4 at 0x400678
+(gdb) b test4
+Breakpoint 5 at 0x400690
+(gdb) b test5
+Breakpoint 6 at 0x400694
+(gdb) b print
+Breakpoint 7 at 0x4006bc
+(gdb) b bitC
+Breakpoint 8 at 0x4006c0
+(gdb) b done
+Breakpoint 9 at 0x4006f0
+(gdb) r
+Starting program: /home/ugd/guransh.mangat1/CPSC355/A2/2a 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-38.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+Multiplier = 0x00000046 (70) 
+Multiplicand = 0xfefefefe (-16843010) 
+
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+(gdb) display/i $pc
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) p $w23
+$1 = 0
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) p $w27
+$2 = 0
+(gdb) p @[K$19
+History has not yet reached $19.
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) p $w19
+$3 = 70
+(gdb) p $w19[K[K29[K0
+$4 = 4278124286
+(gdb) p $w20[K1
+$5 = 0
+(gdb) p $w21[K2
+$6 = 0
+(gdb) p $w22[K3
+$7 = 0
+(gdb) c
+Continuing.
+
+Breakpoint 5, 0x0000000000400690 in test4 ()
+1: x/i $pc
+=> 0x400690 <test4>:	and	w19, w19, #0x7fffffff
+(gdb) cp $w2321019
+$8 = 35
+(gdb) p $w19c[Kp $w23210
+$9 = 4278124286
+(gdb) p $w2019c[Kp $w2321
+$10 = 0
+(gdb) p $w21019c[Kp $w232
+$11 = 0
+(gdb) p $w221019c[Kp $w23
+$12 = 0
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) cp $w2321019c[Kp $w19
+$13 = 35
+(gdb) p $w19c[Kp $w23210
+$14 = 4278124286
+(gdb) p $w20[K1
+$15 = 0
+(gdb) p $w21\[K[K2
+$16 = 0
+(gdb) p $w22[K3
+$17 = 0
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) cp $w23[K[K19
+$18 = 35
+(gdb) p $w19[K[K20
+$19 = 4278124286
+(gdb) p $w20[K1
+$20 = 0
+(gdb) p $w210[K[K[K[K[K[Kc
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) cp $w21[K[K10[K9
+$21 = 35
+(gdb) p $w19[K[K20
+$22 = 4278124286
+(gdb) p $w20[K7
+$23 = 0
+(gdb) p $w2707[Kc
+Continuing.
+
+Breakpoint 3, 0x0000000000400674 in test2 ()
+1: x/i $pc
+=> 0x400674 <test2>:	add	w21, w21, w20
+(gdb) cp $w27[K[K19
+$24 = 35
+(gdb) p $w19[K[K20
+$25 = 4278124286
+(gdb) p $w20[K1
+$26 = 0
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) cp $w21[K[K19
+$27 = 35
+(gdb) p $w19[K[K20
+$28 = 4278124286
+(gdb) p $w20[K1
+$29 = 4278124286
+(gdb) p $w21[K2
+$30 = 0
+(gdb) p $w2212[Kc
+Continuing.
+
+Breakpoint 5, 0x0000000000400690 in test4 ()
+1: x/i $pc
+=> 0x400690 <test4>:	and	w19, w19, #0x7fffffff
+(gdb) cp $w22[K[K19
+$31 = 17
+(gdb) p $w19[K[K21[K9[K0
+$32 = 4278124286
+(gdb) p $w20[K1
+$33 = 4278124286
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) cp $w21[K[K19
+$34 = 17
+(gdb) p $w19[K[K20
+$35 = 4278124286
+(gdb) p $w20[K[K21
+$36 = 4278124286
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) cp $w21[K[K19
+$37 = 17
+(gdb) p $w19[K[K20
+$38 = 4278124286
+(gdb) p $w20[K1
+$39 = 4286545791
+(gdb) p $w21[K2
+$40 = 0
+(gdb) p $w22[K3
+$41 = 2
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) n
+Program not restarted.
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x0000000000400674 in test2 ()
+1: x/i $pc
+=> 0x400674 <test2>:	add	w21, w21, w20
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 5, 0x0000000000400690 in test4 ()
+1: x/i $pc
+=> 0x400690 <test4>:	and	w19, w19, #0x7fffffff
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 3, 0x0000000000400674 in test2 ()
+1: x/i $pc
+=> 0x400674 <test2>:	add	w21, w21, w20
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 5, 0x0000000000400690 in test4 ()
+1: x/i $pc
+=> 0x400690 <test4>:	and	w19, w19, #0x7fffffff
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 5, 0x0000000000400690 in test4 ()
+1: x/i $pc
+=> 0x400690 <test4>:	and	w19, w19, #0x7fffffff
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) p $w19
+$42 = 1560281088
+(gdb) p $23
+$43 = 0
+(gdb) p $23w23
+$44 = 10
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 5, 0x0000000000400690 in test4 ()
+1: x/i $pc
+=> 0x400690 <test4>:	and	w19, w19, #0x7fffffff
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 5, 0x0000000000400690 in test4 ()
+1: x/i $pc
+=> 0x400690 <test4>:	and	w19, w19, #0x7fffffff
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 5, 0x0000000000400690 in test4 ()
+1: x/i $pc
+=> 0x400690 <test4>:	and	w19, w19, #0x7fffffff
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 5, 0x0000000000400690 in test4 ()
+1: x/i $pc
+=> 0x400690 <test4>:	and	w19, w19, #0x7fffffff
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) 
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) p $w19
+$45 = 925794304
+(gdb) p $w19[K[K20
+$46 = 4278124286
+(gdb) p $w20[K1
+$47 = 4294965047
+(gdb) p $w21[K2
+$48 = 0
+(gdb) p $w22[K3
+$49 = 19
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) cc
+Undefined command: "cc".  Try "help".
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 5, 0x0000000000400690 in test4 ()
+1: x/i $pc
+=> 0x400690 <test4>:	and	w19, w19, #0x7fffffff
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) p $w19
+$50 = 1936910336
+(gdb) p $w19[K[K20
+$51 = 4278124286
+(gdb) p $w20[K1
+$52 = 4294967155
+(gdb) p $w21[K3
+$53 = 23
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) cc
+Undefined command: "cc".  Try "help".
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 5, 0x0000000000400690 in test4 ()
+1: x/i $pc
+=> 0x400690 <test4>:	and	w19, w19, #0x7fffffff
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 5, 0x0000000000400690 in test4 ()
+1: x/i $pc
+=> 0x400690 <test4>:	and	w19, w19, #0x7fffffff
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) p $w19
+$54 = 3873891792
+(gdb) p $w19[K[K20
+$55 = 4278124286
+(gdb) p $w20[K1
+$56 = 4294967294
+(gdb) p $w21[K3
+$57 = 30
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 5, 0x0000000000400690 in test4 ()
+1: x/i $pc
+=> 0x400690 <test4>:	and	w19, w19, #0x7fffffff
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c[Kp $w19
+$58 = 1936945896
+(gdb) p $w19[K[K20
+$59 = 4278124286
+(gdb) p $w20[K1
+$60 = 4294967295
+(gdb) p $w21[K3
+$61 = 31
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x0000000000400668 in test1 ()
+1: x/i $pc
+=> 0x400668 <test1>:	and	w27, w19, #0x1
+(gdb) c
+Continuing.
+
+Breakpoint 4, 0x0000000000400678 in test3 ()
+1: x/i $pc
+=> 0x400678 <test3>:	asr	w19, w19, #1
+(gdb) c
+Continuing.
+
+Breakpoint 6, 0x0000000000400694 in test5 ()
+1: x/i $pc
+=> 0x400694 <test5>:	asr	w21, w21, #1
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x0000000000400660 in loop ()
+1: x/i $pc
+=> 0x400660 <loop>:	cmp	w23, #0x20
+(gdb) c
+Continuing.
+
+Breakpoint 7, 0x00000000004006bc in print ()
+1: x/i $pc
+=> 0x4006bc <print+16>:	bl	0x400480 <printf@plt>
+(gdb) c
+Continuing.
+Product = 0xffffffff 
+Multiplier = 0xb9b9b974 
+
+
+Breakpoint 8, 0x00000000004006c0 in bitC ()
+1: x/i $pc
+=> 0x4006c0 <bitC>:	sxtw	x25, w21
+(gdb) c
+Continuing.
+64-bit Result = 0xffffffffb9b9b974 (-1179010700) 
+
+
+Breakpoint 9, 0x00000000004006f0 in done ()
+1: x/i $pc
+=> 0x4006f0 <done+4>:	ldp	x29, x30, [sp], #16
+(gdb) p @[K$w19
+$62 = 3115956596
+(gdb) p $w19[K[K20
+$63 = 4278124286
+(gdb) p $w20[K1
+$64 = 4294967295
+(gdb) p $w21[K3
+$65 = 32
+(gdb) p $w23[K[K[Kx24
+$66 = -1179010700
+(gdb) p $x24[K25
+$67 = void
+(gdb) p $x225[K[K5
+$68 = -4294967296
+(gdb) p $x25[K6
+$69 = 3115956596
+(gdb) c
+Continuing.
+[Inferior 1 (process 29299) exited normally]
+c(gdb) c[K
+The program is not being run.
+(gdb) q
+]0;guransh.mangat1@csa2:~/CPSC355/A2guransh.mangat1@csa2:~/CPSC355/A2$ exit
+exit
+
+Script done on 2019-10-06 17:02:54-06:00

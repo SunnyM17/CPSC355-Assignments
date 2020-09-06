@@ -1,0 +1,412 @@
+Script started on 2019-09-26 18:04:58-06:00
+]0;guransh.mangat1@csa3:~/CPSC355/A1guransh.mangat1@csa3:~/CPSC355/A1$ exit./a1bgcc assn1a.s -o a1[6Pvim assn1a.s[7P./a1bvim assn1a.sgcc assn1a.s -o a1./a1b[K[Kexit[Kgdb a1
+GNU gdb (GDB) Fedora 8.1.1-4.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a1...(no debugging symbols found)...done.
+(gdb) b [K[Kni
+The program is not being run.
+(gdb) r
+Starting program: /home/ugd/guransh.mangat1/CPSC355/A1/a1 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-38.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+For x-value = -10
+  y-value = -253
+ The y maximum = -253
+
+For x-value = -9
+  y-value = -366
+ The y maximum = -253
+
+For x-value = -8
+  y-value = -415
+ The y maximum = -253
+
+For x-value = -7
+  y-value = -412
+ The y maximum = -253
+
+For x-value = -6
+  y-value = -369
+ The y maximum = -253
+
+For x-value = -5
+  y-value = -298
+ The y maximum = -253
+
+For x-value = -4
+  y-value = -211
+ The y maximum = -211
+
+For x-value = -3
+  y-value = -120
+ The y maximum = -120
+
+For x-value = -2
+  y-value = -37
+ The y maximum = -37
+
+For x-value = -1
+  y-value = 26
+ The y maximum = 26
+
+For x-value = 0
+  y-value = 57
+ The y maximum = 57
+
+For x-value = 1
+  y-value = 44
+ The y maximum = 57
+
+For x-value = 2
+  y-value = -25
+ The y maximum = 57
+
+For x-value = 3
+  y-value = -162
+ The y maximum = 57
+
+For x-value = 4
+  y-value = -379
+ The y maximum = 57
+
+[Inferior 1 (process 26428) exited normally]
+(gdb) ni
+The program is not being run.
+(gdb) b test
+Breakpoint 1 at 0x4005e4
+(gdb) b upYmax
+Breakpoint 2 at 0x400674
+(gdb) ni
+The program is not being run.
+(gdb) c
+The program is not being run.
+(gdb) r
+Starting program: /home/ugd/guransh.mangat1/CPSC355/A1/a1 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+
+Breakpoint 1, 0x00000000004005e4 in test ()
+(gdb) ni
+0x00000000004005e8 in test ()
+(gdb) p/i[K[K[Kdispplay/i $pc
+Undefined command: "dispplay".  Try "help".
+(gdb) dispplay/i $pc[1P
+1: x/i $pc
+=> 0x4005e8 <test+4>:	b.gt	0x400680 <comp>
+(gdb) display/i $pc[1@p[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cni[K
+0x00000000004005ec in test ()
+1: x/i $pc
+=> 0x4005ec <test+8>:	mov	x20, #0x39                  	// #57
+(gdb) nidisplay/i $pc
+2: x/i $pc
+=> 0x4005ec <test+8>:	mov	x20, #0x39                  	// #57
+(gdb) display/i $pc[C[C[C[C[C[Cni[Kdisplay/i $pc[1@p[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cni[K
+0x00000000004005f0 in test ()
+1: x/i $pc
+=> 0x4005f0 <test+12>:	mov	x21, #0x0                   	// #0
+2: x/i $pc
+=> 0x4005f0 <test+12>:	mov	x21, #0x0                   	// #0
+(gdb) ni
+0x00000000004005f4 in test ()
+1: x/i $pc
+=> 0x4005f4 <test+16>:	add	x21, x21, #0xb
+2: x/i $pc
+=> 0x4005f4 <test+16>:	add	x21, x21, #0xb
+(gdb) nidisplay/i $pc
+3: x/i $pc
+=> 0x4005f4 <test+16>:	add	x21, x21, #0xb
+(gdb) display/i $pc[C[C[C[C[C[Cni[K
+0x00000000004005f8 in test ()
+1: x/i $pc
+=> 0x4005f8 <test+20>:	mul	x21, x21, x19
+2: x/i $pc
+=> 0x4005f8 <test+20>:	mul	x21, x21, x19
+3: x/i $pc
+=> 0x4005f8 <test+20>:	mul	x21, x21, x19
+(gdb) ni
+0x00000000004005fc in test ()
+1: x/i $pc
+=> 0x4005fc <test+24>:	add	x20, x20, x21
+2: x/i $pc
+=> 0x4005fc <test+24>:	add	x20, x20, x21
+3: x/i $pc
+=> 0x4005fc <test+24>:	add	x20, x20, x21
+(gdb) ni
+0x0000000000400600 in test ()
+1: x/i $pc
+=> 0x400600 <test+28>:	mov	x21, #0xffffffffffffffea    	// #-22
+2: x/i $pc
+=> 0x400600 <test+28>:	mov	x21, #0xffffffffffffffea    	// #-22
+3: x/i $pc
+=> 0x400600 <test+28>:	mov	x21, #0xffffffffffffffea    	// #-22
+(gdb) ni
+0x0000000000400604 in test ()
+1: x/i $pc
+=> 0x400604 <test+32>:	mul	x21, x21, x19
+2: x/i $pc
+=> 0x400604 <test+32>:	mul	x21, x21, x19
+3: x/i $pc
+=> 0x400604 <test+32>:	mul	x21, x21, x19
+(gdb) ni
+0x0000000000400608 in test ()
+1: x/i $pc
+=> 0x400608 <test+36>:	mul	x21, x21, x19
+2: x/i $pc
+=> 0x400608 <test+36>:	mul	x21, x21, x19
+3: x/i $pc
+=> 0x400608 <test+36>:	mul	x21, x21, x19
+(gdb) ni
+0x000000000040060c in test ()
+1: x/i $pc
+=> 0x40060c <test+40>:	add	x20, x20, x21
+2: x/i $pc
+=> 0x40060c <test+40>:	add	x20, x20, x21
+3: x/i $pc
+=> 0x40060c <test+40>:	add	x20, x20, x21
+(gdb) ni
+0x0000000000400610 in test ()
+1: x/i $pc
+=> 0x400610 <test+44>:	mov	x21, #0xfffffffffffffffe    	// #-2
+2: x/i $pc
+=> 0x400610 <test+44>:	mov	x21, #0xfffffffffffffffe    	// #-2
+3: x/i $pc
+=> 0x400610 <test+44>:	mov	x21, #0xfffffffffffffffe    	// #-2
+(gdb) ni
+0x0000000000400614 in test ()
+1: x/i $pc
+=> 0x400614 <test+48>:	mul	x21, x21, x19
+2: x/i $pc
+=> 0x400614 <test+48>:	mul	x21, x21, x19
+3: x/i $pc
+=> 0x400614 <test+48>:	mul	x21, x21, x19
+(gdb) ni
+0x0000000000400618 in test ()
+1: x/i $pc
+=> 0x400618 <test+52>:	mul	x21, x21, x19
+2: x/i $pc
+=> 0x400618 <test+52>:	mul	x21, x21, x19
+3: x/i $pc
+=> 0x400618 <test+52>:	mul	x21, x21, x19
+(gdb) p/i $pc
+Format letter "i" is meaningless in "print" command.
+(gdb) print/d $pc
+$1 = 4195864
+(gdb) print/d $pc
+$2 = 4195864
+(gdb) print/d $pc[K[Kx20
+$3 = -2253
+(gdb) print/d $x20[1Ppc[C[C[C[C[C[C[C[4P/i[C[C[C[Cni[K
+0x000000000040061c in test ()
+1: x/i $pc
+=> 0x40061c <test+56>:	mul	x21, x21, x19
+2: x/i $pc
+=> 0x40061c <test+56>:	mul	x21, x21, x19
+3: x/i $pc
+=> 0x40061c <test+56>:	mul	x21, x21, x19
+(gdb) print/d x2[K[K$x21
+$4 = -200
+(gdb) x[Kprint/d $x21[K[K19
+$5 = -10
+(gdb) ni
+0x0000000000400620 in test ()
+1: x/i $pc
+=> 0x400620 <test+60>:	add	x20, x20, x21
+2: x/i $pc
+=> 0x400620 <test+60>:	add	x20, x20, x21
+3: x/i $pc
+=> 0x400620 <test+60>:	add	x20, x20, x21
+(gdb) niprint/d $x19[K[K21
+$6 = 2000
+(gdb) print/d $x21[K0
+$7 = -2253
+(gdb) print/d $x201[C[C[C[C[C[Cni[K
+0x0000000000400624 in test ()
+1: x/i $pc
+=> 0x400624 <test+64>:	mov	x24, x20
+2: x/i $pc
+=> 0x400624 <test+64>:	mov	x24, x20
+3: x/i $pc
+=> 0x400624 <test+64>:	mov	x24, x20
+(gdb) niprint/d $x2010
+$8 = -253
+(gdb) print/d $x20[K4
+$9 = 0
+(gdb) print/d $x24[K[K20[K[K19
+$10 = -10
+(gdb) print/d $x19240[C[C[C[C[C[Cni[K
+0x0000000000400628 in test ()
+1: x/i $pc
+=> 0x400628 <test+68>:	cmp	x25, #0x0
+2: x/i $pc
+=> 0x400628 <test+68>:	cmp	x25, #0x0
+3: x/i $pc
+=> 0x400628 <test+68>:	cmp	x25, #0x0
+(gdb) niprint/d $x19[K[K25
+$11 = 0
+(gdb) print/d $x25[C[C[C[C[C[Cni[K
+0x000000000040062c in test ()
+1: x/i $pc
+=> 0x40062c <test+72>:	b.eq	0x400658 <upYmax>  // b.none
+2: x/i $pc
+=> 0x40062c <test+72>:	b.eq	0x400658 <upYmax>  // b.none
+3: x/i $pc
+=> 0x40062c <test+72>:	b.eq	0x400658 <upYmax>  // b.none
+(gdb) ni
+0x0000000000400658 in upYmax ()
+1: x/i $pc
+=> 0x400658 <upYmax>:	mov	x26, x24
+2: x/i $pc
+=> 0x400658 <upYmax>:	mov	x26, x24
+3: x/i $pc
+=> 0x400658 <upYmax>:	mov	x26, x24
+(gdb) niprint/d $x25[K5[K6
+$12 = 0
+(gdb) print/d $x26[K4
+$13 = -253
+(gdb) print/d $x246[C[C[C[C[C[Cni[K
+0x000000000040065c in upYmax ()
+1: x/i $pc
+=> 0x40065c <upYmax+4>:	mov	x25, #0x1                   	// #1
+2: x/i $pc
+=> 0x40065c <upYmax+4>:	mov	x25, #0x1                   	// #1
+3: x/i $pc
+=> 0x40065c <upYmax+4>:	mov	x25, #0x1                   	// #1
+(gdb) niprint/d $x24[K5
+$14 = 0
+(gdb) print/d $x25[C[C[C[C[C[Cni[K
+0x0000000000400660 in upYmax ()
+1: x/i $pc
+=> 0x400660 <upYmax+8>:	adrp	x0, 0x400000
+2: x/i $pc
+=> 0x400660 <upYmax+8>:	adrp	x0, 0x400000
+3: x/i $pc
+=> 0x400660 <upYmax+8>:	adrp	x0, 0x400000
+(gdb) niprint/d $x25[K[K0
+$15 = 1
+(gdb) print/d $x0[C[C[C[C[C[Cni[K
+0x0000000000400664 in upYmax ()
+1: x/i $pc
+=> 0x400664 <upYmax+12>:	add	x0, x0, #0x594
+2: x/i $pc
+=> 0x400664 <upYmax+12>:	add	x0, x0, #0x594
+3: x/i $pc
+=> 0x400664 <upYmax+12>:	add	x0, x0, #0x594
+(gdb) ni
+0x0000000000400668 in upYmax ()
+1: x/i $pc
+=> 0x400668 <upYmax+16>:	mov	w1, w19
+2: x/i $pc
+=> 0x400668 <upYmax+16>:	mov	w1, w19
+3: x/i $pc
+=> 0x400668 <upYmax+16>:	mov	w1, w19
+(gdb) ni
+0x000000000040066c in upYmax ()
+1: x/i $pc
+=> 0x40066c <upYmax+20>:	mov	w2, w24
+2: x/i $pc
+=> 0x40066c <upYmax+20>:	mov	w2, w24
+3: x/i $pc
+=> 0x40066c <upYmax+20>:	mov	w2, w24
+(gdb) ni
+0x0000000000400670 in upYmax ()
+1: x/i $pc
+=> 0x400670 <upYmax+24>:	mov	w3, w26
+2: x/i $pc
+=> 0x400670 <upYmax+24>:	mov	w3, w26
+3: x/i $pc
+=> 0x400670 <upYmax+24>:	mov	w3, w26
+(gdb) ni
+
+Breakpoint 2, 0x0000000000400674 in upYmax ()
+1: x/i $pc
+=> 0x400674 <upYmax+28>:	bl	0x400480 <printf@plt>
+2: x/i $pc
+=> 0x400674 <upYmax+28>:	bl	0x400480 <printf@plt>
+3: x/i $pc
+=> 0x400674 <upYmax+28>:	bl	0x400480 <printf@plt>
+(gdb) ni
+For x-value = -10
+  y-value = -253
+ The y maximum = -253
+
+0x0000000000400678 in upYmax ()
+1: x/i $pc
+=> 0x400678 <upYmax+32>:	add	x19, x19, #0x1
+2: x/i $pc
+=> 0x400678 <upYmax+32>:	add	x19, x19, #0x1
+3: x/i $pc
+=> 0x400678 <upYmax+32>:	add	x19, x19, #0x1
+(gdb) ni[K[Kni
+0x000000000040067c in upYmax ()
+1: x/i $pc
+=> 0x40067c <upYmax+36>:	b	0x4005e4 <test>
+2: x/i $pc
+=> 0x40067c <upYmax+36>:	b	0x4005e4 <test>
+3: x/i $pc
+=> 0x40067c <upYmax+36>:	b	0x4005e4 <test>
+(gdb) ni
+
+Breakpoint 1, 0x00000000004005e4 in test ()
+1: x/i $pc
+=> 0x4005e4 <test>:	cmp	x19, #0x4
+2: x/i $pc
+=> 0x4005e4 <test>:	cmp	x19, #0x4
+3: x/i $pc
+=> 0x4005e4 <test>:	cmp	x19, #0x4
+(gdb) ni[Kniprint/d $x0[C[C[C[C[C[Cni[Kprint/d $x0[K19
+$16 = -9
+(gdb) print/d $x19[C[C[C[C[C[Cni[K
+0x00000000004005e8 in test ()
+1: x/i $pc
+=> 0x4005e8 <test+4>:	b.gt	0x400680 <comp>
+2: x/i $pc
+=> 0x4005e8 <test+4>:	b.gt	0x400680 <comp>
+3: x/i $pc
+=> 0x4005e8 <test+4>:	b.gt	0x400680 <comp>
+(gdb) ni
+0x00000000004005ec in test ()
+1: x/i $pc
+=> 0x4005ec <test+8>:	mov	x20, #0x39                  	// #57
+2: x/i $pc
+=> 0x4005ec <test+8>:	mov	x20, #0x39                  	// #57
+3: x/i $pc
+=> 0x4005ec <test+8>:	mov	x20, #0x39                  	// #57
+(gdb) ni
+0x00000000004005f0 in test ()
+1: x/i $pc
+=> 0x4005f0 <test+12>:	mov	x21, #0x0                   	// #0
+2: x/i $pc
+=> 0x4005f0 <test+12>:	mov	x21, #0x0                   	// #0
+3: x/i $pc
+=> 0x4005f0 <test+12>:	mov	x21, #0x0                   	// #0
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 26535] will be killed.
+
+Quit anyway? (y or n) y
+]0;guransh.mangat1@csa3:~/CPSC355/A1guransh.mangat1@csa3:~/CPSC355/A1$ exit
+exit
+
+Script done on 2019-09-26 18:11:48-06:00

@@ -1,0 +1,100 @@
+Script started on 2019-09-26 18:14:48-06:00
+]0;guransh.mangat1@csa3:~/CPSC355/A1guransh.mangat1@csa3:~/CPSC355/A1$ gdb a1b
+GNU gdb (GDB) Fedora 8.1.1-4.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a1b...(no debugging symbols found)...done.
+(gdb) b done
+Breakpoint 1 at 0x40064c
+(gdb) r
+Starting program: /home/ugd/guransh.mangat1/CPSC355/A1/a1b 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-38.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+x-value = -10
+ y-value = -253
+The y maximum = -253 
+ 
+x-value = -9
+ y-value = -366
+The y maximum = -253 
+ 
+x-value = -8
+ y-value = -415
+The y maximum = -253 
+ 
+x-value = -7
+ y-value = -412
+The y maximum = -253 
+ 
+x-value = -6
+ y-value = -369
+The y maximum = -253 
+ 
+x-value = -5
+ y-value = -298
+The y maximum = -253 
+ 
+x-value = -4
+ y-value = -211
+The y maximum = -211 
+ 
+x-value = -3
+ y-value = -120
+The y maximum = -120 
+ 
+x-value = -2
+ y-value = -37
+The y maximum = -37 
+ 
+x-value = -1
+ y-value = 26
+The y maximum = 26 
+ 
+x-value = 0
+ y-value = 57
+The y maximum = 57 
+ 
+x-value = 1
+ y-value = 44
+The y maximum = 57 
+ 
+x-value = 2
+ y-value = -25
+The y maximum = 57 
+ 
+x-value = 3
+ y-value = -162
+The y maximum = 57 
+ 
+x-value = 4
+ y-value = -379
+The y maximum = 57 
+ 
+
+Breakpoint 1, 0x000000000040064c in done ()
+(gdb) exit[K[K[K[Kq
+A debugging session is active.
+
+	Inferior 1 [process 27691] will be killed.
+
+Quit anyway? (y or n) y
+]0;guransh.mangat1@csa3:~/CPSC355/A1guransh.mangat1@csa3:~/CPSC355/A1$ exit
+exit
+
+Script done on 2019-09-26 18:16:06-06:00

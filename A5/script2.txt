@@ -1,0 +1,17 @@
+Script started on 2019-11-29 13:33:54-07:00
+]0;guransh.mangat1@csa2:~/CPSC355/A5guransh.mangat1@csa2:~/CPSC355/A5$ ./a5b 12 12 1999
+December 12th, 1999
+]0;guransh.mangat1@csa2:~/CPSC355/A5guransh.mangat1@csa2:~/CPSC355/A5$ ./a5b 12 12 1999[K[K[K[K[K[K[K[K[K[K06 6 1897
+June 6th, 1897
+]0;guransh.mangat1@csa2:~/CPSC355/A5guransh.mangat1@csa2:~/CPSC355/A5$ ./a5b 06 6 1897[C[1P[1P[1@4[C[C[1P 18972 18970 1897
+April 20th, 1897
+]0;guransh.mangat1@csa2:~/CPSC355/A5guransh.mangat1@csa2:~/CPSC355/A5$ ./a5b 4 20 1897[1P 18971 1897[1P[C[1P[1@1[1@1[C[1@ [1@ [C[C[C[1P
+November 21st, 1897
+]0;guransh.mangat1@csa2:~/CPSC355/A5guransh.mangat1@csa2:~/CPSC355/A5$ ./a5b 11 21 1897[K[K[K[K[K[K[K29 2019
+November 29th, 2019
+]0;guransh.mangat1@csa2:~/CPSC355/A5guransh.mangat1@csa2:~/CPSC355/A5$ ./a5b 11 29 2019[K[K[K[K[K[K[K[K[K2 3 019[K[K[K1902
+December 3rd, 1902
+]0;guransh.mangat1@csa2:~/CPSC355/A5guransh.mangat1@csa2:~/CPSC355/A5$ quit[K[K[K[Kexit
+exit
+
+Script done on 2019-11-29 13:34:47-07:00

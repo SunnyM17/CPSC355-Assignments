@@ -1,0 +1,532 @@
+Script started on 2019-10-24 21:31:41-06:00
+]0;guransh.mangat1@csa2:~/CPSC355/A3guransh.mangat1@csa2:~/CPSC355/A3$ gdb a3
+GNU gdb (GDB) Fedora 8.1.1-4.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a3...(no debugging symbols found)...done.
+(gdb) b test 3[K[K3
+Breakpoint 1 at 0x4006d4
+(gdb) r
+Starting program: /home/ugd/guransh.mangat1/CPSC355/A3/a3 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-38.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+Unsorted Array: 
+v[0]: 103 
+v[1]: 198 
+v[2]: 105 
+v[3]: 115 
+v[4]: 81 
+v[5]: 255 
+v[6]: 74 
+v[7]: 236 
+v[8]: 41 
+v[9]: 205 
+v[10]: 186 
+v[11]: 171 
+v[12]: 242 
+v[13]: 251 
+v[14]: 227 
+v[15]: 70 
+v[16]: 124 
+v[17]: 194 
+v[18]: 84 
+v[19]: 248 
+v[20]: 27 
+v[21]: 232 
+v[22]: 231 
+v[23]: 141 
+v[24]: 118 
+v[25]: 90 
+v[26]: 46 
+v[27]: 99 
+v[28]: 51 
+v[29]: 159 
+v[30]: 201 
+v[31]: 154 
+v[32]: 102 
+v[33]: 50 
+v[34]: 13 
+v[35]: 183 
+v[36]: 49 
+v[37]: 88 
+v[38]: 163 
+v[39]: 90 
+v[40]: 37 
+v[41]: 93 
+v[42]: 5 
+v[43]: 23 
+v[44]: 88 
+v[45]: 233 
+v[46]: 94 
+v[47]: 212 
+v[48]: 171 
+v[49]: 178 
+Sorted Array: 
+
+Breakpoint 1, 0x00000000004006d4 in test3 ()
+(gdb) display/i $pc
+1: x/i $pc
+=> 0x4006d4 <test3>:	ldr	w22, [x29, #220]
+(gdb)  [Kx/%d x20 
+A syntax error in expression, near `%d x20'.
+(gdb) x/%d x20 [1P
+No symbol table is loaded.  Use the "file" command.
+(gdb) x/d x20 [1@$
+0xfffffffff0a0:	103
+(gdb) x/d $x20 [K+ 4
+0xfffffffff0a4:	198
+(gdb) x/d $x20+ 4[K5[K8
+0xfffffffff0a8:	105
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x00000000004006d4 in test3 ()
+1: x/i $pc
+=> 0x4006d4 <test3>:	ldr	w22, [x29, #220]
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x00000000004006d4 in test3 ()
+1: x/i $pc
+=> 0x4006d4 <test3>:	ldr	w22, [x29, #220]
+(gdb) cx/d $x20+ 84[2P 
+0xfffffffff0a0:	103
+(gdb) x/d $x20 [C[C[C[C[C[Cc[Kx/d $x20+ 8484
+0xfffffffff0a4:	198
+(gdb) x/d $x20+ 4[2P [C[C[C[C[C[Cc[Kx/d $x20+ 8
+0xfffffffff0a8:	105
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x00000000004006d4 in test3 ()
+1: x/i $pc
+=> 0x4006d4 <test3>:	ldr	w22, [x29, #220]
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x00000000004006d4 in test3 ()
+1: x/i $pc
+=> 0x4006d4 <test3>:	ldr	w22, [x29, #220]
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x00000000004006d4 in test3 ()
+1: x/i $pc
+=> 0x4006d4 <test3>:	ldr	w22, [x29, #220]
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x00000000004006d4 in test3 ()
+1: x/i $pc
+=> 0x4006d4 <test3>:	ldr	w22, [x29, #220]
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 3463] will be killed.
+
+Quit anyway? (y or n) y
+]0;guransh.mangat1@csa2:~/CPSC355/A3guransh.mangat1@csa2:~/CPSC355/A3$ gdb a3
+GNU gdb (GDB) Fedora 8.1.1-4.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a3...(no debugging symbols found)...done.
+(gdb) loop[K[K[K[Kb loop [K2
+Breakpoint 1 at 0x40068c
+(gdb) r
+Starting program: /home/ugd/guransh.mangat1/CPSC355/A3/a3 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-38.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+Unsorted Array: 
+v[0]: 103 
+v[1]: 198 
+v[2]: 105 
+v[3]: 115 
+v[4]: 81 
+v[5]: 255 
+v[6]: 74 
+v[7]: 236 
+v[8]: 41 
+v[9]: 205 
+v[10]: 186 
+v[11]: 171 
+v[12]: 242 
+v[13]: 251 
+v[14]: 227 
+v[15]: 70 
+v[16]: 124 
+v[17]: 194 
+v[18]: 84 
+v[19]: 248 
+v[20]: 27 
+v[21]: 232 
+v[22]: 231 
+v[23]: 141 
+v[24]: 118 
+v[25]: 90 
+v[26]: 46 
+v[27]: 99 
+v[28]: 51 
+v[29]: 159 
+v[30]: 201 
+v[31]: 154 
+v[32]: 102 
+v[33]: 50 
+v[34]: 13 
+v[35]: 183 
+v[36]: 49 
+v[37]: 88 
+v[38]: 163 
+v[39]: 90 
+v[40]: 37 
+v[41]: 93 
+v[42]: 5 
+v[43]: 23 
+v[44]: 88 
+v[45]: 233 
+v[46]: 94 
+v[47]: 212 
+v[48]: 171 
+v[49]: 178 
+Sorted Array: 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) x/d $w[Kx20[K[K0[K20
+0xfffffffff0a0:	103
+(gdb) x/d $x20+4
+0xfffffffff0a4:	198
+(gdb) c
+Continuing.
+v[0]: 5 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) cx/d $x20+4[K
+0xfffffffff0a0:	5
+(gdb) x/d $x20[C[C[C[C[C[Cc[Kx/d $x20+4
+0xfffffffff0a4:	198
+(gdb) c
+Continuing.
+v[1]: 13 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) cx/d $x20+4
+0xfffffffff0a4:	13
+(gdb) x/d $x20+4[C[C[C[C[C[Cc[Kx/d $x20+4[K8
+0xfffffffff0a8:	105
+(gdb) c
+Continuing.
+v[2]: 23 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) cx/d $x20+8[K[K
+0xfffffffff0a0:	5
+(gdb) x/d $x20+4
+0xfffffffff0a4:	13
+(gdb) x/d $x20+4[K8
+0xfffffffff0a8:	23
+(gdb) c
+Continuing.
+v[3]: 27 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) cx/d $x20+84[K
+0xfffffffff0a0:	5
+(gdb) x/d $x20[C[C[C[C[C[Cc[Kx/d $x20+84
+0xfffffffff0a4:	13
+(gdb) x/d $x20+4[K8
+0xfffffffff0a8:	23
+(gdb) 12[K[Kx/d $x20+812[K[K[K12
+0xfffffffff0ac:	27
+(gdb) c
+Continuing.
+v[4]: 37 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[5]: 41 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[6]: 46 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[7]: 49 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[8]: 50 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[9]: 51 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[10]: 70 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[11]: 74 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[12]: 81 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[13]: 84 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[14]: 88 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[15]: 88 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) 
+Continuing.
+v[16]: 90 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) cc
+Undefined command: "cc".  Try "help".
+(gdb) c
+Continuing.
+v[17]: 90 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[18]: 93 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[19]: 94 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[20]: 99 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[21]: 102 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[22]: 103 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[23]: 105 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c[Kx/d @[K$x2-[K0
+0xfffffffff0a0:	5
+(gdb) x/d $x20+4
+0xfffffffff0a4:	13
+(gdb) x/d $x20+4[K8
+0xfffffffff0a8:	23
+(gdb) x/d $x20+8[K12[1P4[K12
+0xfffffffff0ac:	27
+(gdb) x/d $x20+12[K[K16
+0xfffffffff0b0:	37
+(gdb) x/d $x20+16[K[K20
+0xfffffffff0b4:	41
+(gdb) x/d $x20+20[K4
+0xfffffffff0b8:	46
+(gdb) x/d $x20+24[K8
+0xfffffffff0bc:	49
+(gdb) c
+Continuing.
+v[24]: 115 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[25]: 118 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[26]: 124 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[27]: 141 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[28]: 154 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[29]: 159 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[30]: 163 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[31]: 171 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[32]: 171 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[33]: 178 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[34]: 183 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[35]: 186 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[36]: 194 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[37]: 198 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[38]: 201 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[39]: 205 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[40]: 212 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[41]: 227 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[42]: 231 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[43]: 232 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[44]: 233 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[45]: 236 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[46]: 242 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[47]: 248 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[48]: 251 
+
+Breakpoint 1, 0x000000000040068c in loop2 ()
+(gdb) c
+Continuing.
+v[49]: 255 
+[Inferior 1 (process 3521) exited normally]
+(gdb) c
+The program is not being run.
+(gdb) c
+The program is not being run.
+(gdb) c
+The program is not being run.
+(gdb) exit
+Undefined command: "exit".  Try "help".
+(gdb) quit
+]0;guransh.mangat1@csa2:~/CPSC355/A3guransh.mangat1@csa2:~/CPSC355/A3$ quit
+bash: quit: command not found
+]0;guransh.mangat1@csa2:~/CPSC355/A3guransh.mangat1@csa2:~/CPSC355/A3$ exit
+exit
+
+Script done on 2019-10-24 21:35:15-06:00
